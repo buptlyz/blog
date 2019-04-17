@@ -3,6 +3,17 @@ title: 第一篇 Hexo使用说明
 ---
 Hexo的使用说明，包括一些常用命令。
 
+## 开发流程
+
+### 初始化项目
+全局安装hexo-cli：`npm install -g hexo-cli`
+生成项目：`hexo init <folder name>`
+进入文件目录并初始化：`cd <folder name> && yarn/npm i`
+
+### 维护
+拉仓库代码 `git clone git@github.com:buptlyz/blog.git`
+进入文件目录并初始化 `cd blog && yarn` 或者 `cd blog && npm install`
+
 ## Hexo常用命令
 
 ### 创建新的post
