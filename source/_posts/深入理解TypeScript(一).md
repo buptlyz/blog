@@ -1,17 +1,24 @@
 ---
-title: 深入理解TypeScript(一)
+title: 深入理解TypeScript(一)(转)
 date: 2019-04-19 19:58:07
 tags:
 ---
 [原文链接](https://jkchao.github.io/typescript-book-chinese/)
+
 ## 编译上下文
+
 用来给文件分组，告诉TS哪些文件是有效的，哪些是无效的。
 包含了有哪些编译选项正在使用。
 定义这种逻辑分组，一个比较好的方式是使用`tsconfig.json`文件。
-#### tsconfig.json
+
+### tsconfig.json
+
 在项目根目录下创建一个空json文件，通过这种方式，TS会将此目录下的所有`.ts`文件作为编译上下文的一部分，还会包含一部分默认的编译选项。
-#### 编译选项
+
+### 编译选项
+
 通过`compilerOptions`来定制：
+
 ```json
 {
   "compilerOptions": {
@@ -67,14 +74,20 @@ tags:
   }
 }
 ```
-#### 编译
+
+### 编译
+
 好的IDE支持即时编译，也可以从命令行手动运行编译器。
+
 * 运行tsc，会在当前目录或者父级目录寻找`tsconfig.json`文件
 * 运行`tsc -p ./path-to-project-directory`。这个路径可以是绝对路径，也可以是相对路径。
 
 使用`tsc -w`启用TS编译器的观测模式，在检测到文件改动后，将重新编译。
-#### 指定文件
+
+### 指定文件
+
 也可以显式指定需要编译的文件：
+
 ```json
 {
   "files": [
@@ -82,7 +95,9 @@ tags:
   ]
 }
 ```
+
 或者使用`include`和`exclude`选项来指定需要包含的文件和排除的文件：
+
 ```json
 {
   "include": [
@@ -94,28 +109,40 @@ tags:
   ]
 }
 ```
+
 ## 声明空间
+
 两种声明空间：类型声明空间和变量声明空间。
-#### 类型声明空间
+
+### 类型声明空间
+
 当作类型注解的内容：
+
 ```typescript
 class Foo {}
 interface Bar {}
 type Bas = {};
 ```
+
 这里可以将`Foo`，`Bar`，`Bas`当作类型注解使用：
+
 ```typescript
 let foo: Foo;
 let bar: Bar;
 let bas: Bas;
 ```
+
 注意，下面尽管定义了`interface Bar`，但不能将它作为变量使用，因为它没有定义在变量声明空间中：
+
 ```typescript
 interface Bar {}
 const bar = Bar; // Error: "cannot find name 'Bar'"
 ```
-#### 变量声明空间
+
+### 变量声明空间
+
 变量声明空间包括可用作变量的内容，在前面`class Foo`提供了类型`Foo`到类型声明空间，同时提供了一个变量`Foo`到变量声明空间：
+
 ```typescript
 class Foo {}
 const someVar = Foo;
