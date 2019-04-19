@@ -1,7 +1,7 @@
 ---
 title: 深入理解TypeScript(一)(转)
 date: 2019-04-19 19:58:07
-tags:
+tags: 深入理解TypeScript
 ---
 [原文链接](https://jkchao.github.io/typescript-book-chinese/)
 

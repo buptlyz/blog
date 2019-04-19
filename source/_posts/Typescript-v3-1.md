@@ -1,7 +1,7 @@
 ---
 title: Typescript-v3.1(转)
 date: 2019-04-19 20:25:54
-tags: Typescript v3.1
+tags: Typescript
 ---
 [原文链接](https://www.tslang.cn/docs/release-notes/typescript-3.1.html)
 
