@@ -5,6 +5,8 @@ tags: CSS动画
 ---
 
 [原文链接](https://segmentfault.com/a/1190000008015671)
+[英文原文](https://www.smashingmagazine.com/2016/12/gpu-animation-doing-it-right/)
+[CSS Triggers](https://csstriggers.com/)
 
 ## GPU是如何合成图像的
 
