@@ -8,13 +8,12 @@ tags:
 
 使用React处理数据相对来说比较容易，因为React的设计就是把数据当作状态。但是当你需要处理的数据量很大的时候，麻烦就来了。比如你要处理一个包含500-1000条记录的数据集，这会产生巨大的计算量并导致性能问题。下面我们将学习如何使用虚拟列表来“看起来”渲染了一个长列表。
 
-我们将使用[React Virtualized](React
-Virtualized)组件来实现我们的需求。它让我们可以以很小的代价渲染大集合数据。
+我们将使用[React Virtualized][]组件来实现我们的需求。它让我们可以以很小的代价渲染大集合数据。
 
 ## 设置
 
-React Virtualized官方已经有很详细的介绍了，可以去它们的[github](React
-Virtualized)去看看。
+React Virtualized官方已经有很详细的介绍了，可以去它们的[github][React
+Virtualized]去看看。
 
 我们需要大量的数据，下面我们就来造一些。
 
