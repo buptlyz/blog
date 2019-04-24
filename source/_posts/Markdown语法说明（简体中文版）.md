@@ -1,7 +1,7 @@
 ---
 title: Markdown语法说明（简体中文版）(转)
 date: 2019-04-17 18:32:30
-tags:
+tags: Markdown
 ---
 [原文链接](https://www.appinn.com/markdown/)
 
