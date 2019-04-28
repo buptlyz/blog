@@ -1,5 +1,5 @@
 ---
-title: Node.js事件循环，定时器和process.nextTick()
+title: Node.js事件循环，定时器和process.nextTick(转)
 date: 2019-04-21 21:46:01
 tags: Node.js
 ---
