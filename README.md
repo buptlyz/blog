@@ -1,5 +1,7 @@
 # Blog
 
+[hexo](https://hexo.io/zh-cn/docs/)
+
 ```shell
 npm install hexo-cli -g
 cd blog
