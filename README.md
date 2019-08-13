@@ -1,5 +1,12 @@
-## Blog
+# Blog
+
+```shell
+npm install hexo-cli -g
+cd blog
+npm install
+hexo server
+```
 
 日志静态服务。
 使用Hexo构建，发布到Github Page。
-地址: (https://buptlyz.github.io/)
+地址: [https://buptlyz.github.io/](https://buptlyz.github.io/)
